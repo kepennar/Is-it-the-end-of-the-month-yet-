@@ -10,6 +10,7 @@
     body {
       font-family: 'Pathway Gothic One', sans-serif;
       text-align: center;
+      background-color: lightblue;
     }
     h1 {
       font-family: 'Biryani', sans-serif;
@@ -17,10 +18,14 @@
     .text {
       font-size: 3em;
     }
+    .unicorn {
+      background: url('unicorn.jpg') no-repeat;
+      background-size: cover;
+    }
   </style>
   <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Biryani:400,700' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body class="{{ "unicorn" if response }}">
   <h1>Is it the end of the month yet ?</h1>
   <h2 class="text">
     {{ (response + '') | capitalize }}
