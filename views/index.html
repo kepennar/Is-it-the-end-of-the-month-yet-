@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Is it the end of the month yet ?</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
+  <style type="text/css">
+    body {
+      font-family: 'Pathway Gothic One', sans-serif;
+      text-align: center;
+    }
+    h1 {
+      font-family: 'Biryani', sans-serif;
+    }
+    .text {
+      font-size: 3em;
+    }
+  </style>
+  <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Biryani:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <h1>Is it the end of the month yet ?</h1>
+  <h2 class="text">
+    {{ (response + '') | capitalize }}
+  </h2>
+  <div class="text">
+    {{ distance }}
+  </div>
+</body>
+</html>
