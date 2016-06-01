@@ -4,7 +4,7 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
-    "start": "node lib/index.js",
+    "start": "node --use_strict lib/index.js",
     "postinstall": "npm run build",
     "build": "babel src -d lib",
     "test": "echo \"Error: no test specified\" && exit 1"
