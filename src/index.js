@@ -47,6 +47,6 @@ function itIsTheEndOfTheMonth() {
   const interval = endOfMonth.date() - currentDay;
   return {
     response: interval < 2,
-    distance: interval > 15 ? `It is in ${interval} days` : `It was ${currentDay} days ago`
+    distance: interval < 15 ? `It is in ${interval} days` : `It was ${currentDay} days ago`
   };
 }
